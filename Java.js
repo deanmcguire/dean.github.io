@@ -2,7 +2,7 @@
 
 async function fetchStockData() {
     try {
-        const response = await fetch("https://data.alpaca.markets/v2/stocks/AAPL/quotes/latest"); // Replace "AAPL" with the desired stock symbol
+        const response = await fetch("https://cors-anywhere.herokuapp.com/https://data.alpaca.markets/v2/stocks/AAPL/quotes/latest");
         const data = await response.json();
         
         // Update your website with the received data
