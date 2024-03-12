@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dean</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./css/Basis.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" type="JPG File" href="C:\Users\Deanm\Desktop\Dean Website\Images">
+<link rel="stylesheet" type="JPG File" href="D:\Dean Website\Images">
+
+
+
+
+
+	  
+	 <style>
+  
+	  
+   
+    div.b {
+      font-size: large;
+      padding: 5px 94.65px;
+    }
+    
+    div.c {
+      font-size: 150%;
+      text-align: start 
+		 
+    }
+	  
+img { 
+  width: 50%; 
+}
+</style>
+</head>
+
+
+<body style="background-color:#07081dd5">
+
+  
+
+  
+
+  <!-- TradingView Widget BEGIN -->
+  <div id="widget">
+    
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+      "symbols": [
+        {
+          "proName": "FOREXCOM:SPXUSD",
+          "title": "S&P 500 Index"
+        },
+        {
+          "proName": "FOREXCOM:NSXUSD",
+          "title": "US 100 Cash CFD"
+        },
+        {
+          "proName": "FX_IDC:EURUSD",
+          "title": "EUR to USD"
+        },
+        {
+          "proName": "BITSTAMP:BTCUSD",
+          "title": "Bitcoin"
+        },
+        {
+          "proName": "BITSTAMP:ETHUSD",
+          "title": "Ethereum"
+        }
+      ],
+      "showSymbolLogo": true,
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "colorTheme": "dark",
+      "locale": "en"
+    }
+      </script>
+    </div>
+    </div>
+    <!-- TradingView Widget END -->
+    
+
+  <div id="sidenav" class = "sidebar">
+    <button id="closebtn" onclick="closenav()"><image src="./Images/menu.png" alt=""></button>
+      <ul>
+        <li><a class="" href="Home.html">Home</a></li>
+        <li><a href="Track_Popular_Stocks.html">Stocks</a></li>
+        <li><a href="AI_ETF.html">AI.ETF</a></li>
+        <li><a href="Trusted_Brokers.html">Brokers</a></li>
+        <li><a href="Trading_Tips.html">Tips</a></li>
+      </ul>
+
+
+  </div>
+  <button id="openbtn" onclick="opennav()"><img src="./Images/Open.png" alt=""></button>
+  
+  <script>
+    // Function to close
+    function closenav() {
+      document.getElementById("sidenav").style.width = "0";
+    }
+
+    function opennav() {
+      document.getElementById("sidenav").style.width = "10%"; /* Effects the size of the navigation bar after open function */
+    }
+
+    // Function to open
+  </script>
+
+<div>
+  <google-graph id="google-graph">
+  
+   <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+   
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+    {
+    "symbols": [
+      [
+        "Google",
+        "GOOGL|1D"
+      ]
+    ],
+    "chartOnly": false,
+    "width": 550,
+    "height": 400,
+    "locale": "en",
+    "colorTheme": "dark",
+    "autosize": false,
+    "showVolume": false,
+    "showMA": false,
+    "hideDateRanges": false,
+    "hideMarketStatus": false,
+    "hideSymbolLogo": false,
+    "scalePosition": "right",
+    "scaleMode": "Normal",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+    "fontSize": "10",
+    "noTimeScale": false,
+    "valuesTracking": "1",
+    "changeMode": "price-and-percent",
+    "chartType": "area",
+    "maLineColor": "#2962FF",
+    "maLineWidth": 1,
+    "maLength": 9,
+    "lineWidth": 2,
+    "lineType": 0,
+    "dateRanges": [
+      "1d|1",
+      "1m|30",
+      "3m|60",
+      "12m|1D",
+      "60m|1W",
+      "all|1M"
+    ]
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  </div>
+    
+    
+  <div>
+  
+  
+  </google-graph>
+  
+  <amazon-graph id="amazon-graph">
+  
+    <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+    {
+    "symbols": [
+      [
+        "NASDAQ:AMZN|1D"
+      ]
+    ],
+    "chartOnly": false,
+    "width": 550,
+    "height": 400,
+    "locale": "en",
+    "colorTheme": "dark",
+    "autosize": false,
+    "showVolume": false,
+    "showMA": false,
+    "hideDateRanges": false,
+    "hideMarketStatus": false,
+    "hideSymbolLogo": false,
+    "scalePosition": "right",
+    "scaleMode": "Normal",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+    "fontSize": "10",
+    "noTimeScale": false,
+    "valuesTracking": "1",
+    "changeMode": "price-and-percent",
+    "chartType": "area",
+    "maLineColor": "#2962FF",
+    "maLineWidth": 1,
+    "maLength": 9,
+    "lineWidth": 2,
+    "lineType": 0,
+    "dateRanges": [
+      "1d|1",
+      "1m|30",
+      "3m|60",
+      "12m|1D",
+      "60m|1W",
+      "all|1M"
+    ]
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  </div>
+  
+  
+  </amazon-graph>
+  
+  </div>
+  <div>
+  <Tesla-graph id="Tesla-graph">
+    <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+    {
+    "symbols": [
+      [
+        "NASDAQ:TSLA|1D"
+      ]
+    ],
+    "chartOnly": false,
+    "width": 550,
+    "height": 400,
+    "locale": "en",
+    "colorTheme": "dark",
+    "autosize": false,
+    "showVolume": false,
+    "showMA": false,
+    "hideDateRanges": false,
+    "hideMarketStatus": false,
+    "hideSymbolLogo": false,
+    "scalePosition": "right",
+    "scaleMode": "Normal",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+    "fontSize": "10",
+    "noTimeScale": false,
+    "valuesTracking": "1",
+    "changeMode": "price-and-percent",
+    "chartType": "area",
+    "maLineColor": "#2962FF",
+    "maLineWidth": 1,
+    "maLength": 9,
+    "lineWidth": 2,
+    "lineType": 0,
+    "dateRanges": [
+      "1d|1",
+      "1m|30",
+      "3m|60",
+      "12m|1D",
+      "60m|1W",
+      "all|1M"
+    ]
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+    </div>
+    
+  
+  </tesla-graph>
+
+  <apple-graph id="apple-graph">
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  {
+  "symbols": [
+    [
+      "NASDAQ:AAPL|1D"
+    ]
+  ],
+  "chartOnly": false,
+  "width": 550,
+  "height": 400,
+  "locale": "en",
+  "colorTheme": "dark",
+  "autosize": false,
+  "showVolume": false,
+  "showMA": false,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "fontSize": "10",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "changeMode": "price-and-percent",
+  "chartType": "area",
+  "maLineColor": "#2962FF",
+  "maLineWidth": 1,
+  "maLength": 9,
+  "lineWidth": 2,
+  "lineType": 0,
+  "dateRanges": [
+    "1d|1",
+    "1m|30",
+    "3m|60",
+    "12m|1D",
+    "60m|1W",
+    "all|1M"
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+  </apple-graph>
+
+  <microsoft-graph id="microsoft-graph">
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  {
+  "symbols": [
+    [
+      "Microsoft",
+      "MSFT|1D"
+    ]
+  ],
+  "chartOnly": false,
+  "width": 550,
+  "height": 400,
+  "locale": "en",
+  "colorTheme": "dark",
+  "autosize": false,
+  "showVolume": false,
+  "showMA": false,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "fontSize": "10",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "changeMode": "price-and-percent",
+  "chartType": "area",
+  "maLineColor": "#2962FF",
+  "maLineWidth": 1,
+  "maLength": 9,
+  "lineWidth": 2,
+  "lineType": 0,
+  "dateRanges": [
+    "1d|1",
+    "1m|30",
+    "3m|60",
+    "12m|1D",
+    "60m|1W",
+    "all|1M"
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+  </microsoft-graph>
+
+  <meta-graph id="meta-graph">
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  {
+  "symbols": [
+    [
+      "NASDAQ:META|1D"
+    ]
+  ],
+  "chartOnly": false,
+  "width": 550,
+  "height": 400,
+  "locale": "en",
+  "colorTheme": "dark",
+  "autosize": false,
+  "showVolume": false,
+  "showMA": false,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "fontSize": "10",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "changeMode": "price-and-percent",
+  "chartType": "area",
+  "maLineColor": "#2962FF",
+  "maLineWidth": 1,
+  "maLength": 9,
+  "lineWidth": 2,
+  "lineType": 0,
+  "dateRanges": [
+    "1d|1",
+    "1m|30",
+    "3m|60",
+    "12m|1D",
+    "60m|1W",
+    "all|1M"
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+</meta-graph>
+
+
+
+
+
+
+
+  </div>
+
+
+  
+    </body>
+  
+
+
+
+
+
+
+
+
+
+
+<!--Footer-->
+<style>
+
+  .footer {
+    position: absolute;
+    
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(88, 87, 87);
+    color: white;
+    text-align: left;
+  }
+  </style>
+  
+  <div class="footer">
+    <p>Student number - 20179474 - Dean McGuire </p>
+    
+    
+    
+    
+  </div>
+
+
+</head>
+
+
+
